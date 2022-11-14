@@ -296,7 +296,8 @@ section {
 }
 
 .col-38 {
-    width: 38.2%;
+    width: 100%;
+    border: 1px solid blue;
 }
 
 /* --------- 2.1 Header --------- */
@@ -364,6 +365,7 @@ section {
 
 .nav-solid #logo #banner-logo {
     display: none;
+    /* border: 1px solid blue; */
 }
 
 .nav-solid #logo #navigation-logo {
@@ -2326,7 +2328,3 @@ blockquote {
     }
 
 }
-
-
-
-

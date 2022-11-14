@@ -1,0 +1,19 @@
+.section-heading-intro {
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    /* display: flex; */
+}
+
+.section-heading-skills {
+    width: 50%;
+    border-left: 1px solid black;
+    padding-left: 5%;
+    /* display: flex; */
+}
+
+
+.custom-col-intro {
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+}
