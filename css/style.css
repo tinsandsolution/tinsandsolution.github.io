@@ -41,7 +41,7 @@ h2, h3 {
 }
 
 b {
-    color: #7312e5;
+    color: #3c3ebc;
 }
 /* small */
 @media screen and (max-width: 800px) {
@@ -81,7 +81,7 @@ b {
 /* big */
 @media screen and (min-width: 801px) {
     #nav-inner > a {
-        color: #ffb880;
+        color: white;
         text-decoration: none;
     }
     #nav-inner-mini {
