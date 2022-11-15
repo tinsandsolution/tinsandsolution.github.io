@@ -43,6 +43,16 @@ h2, h3 {
 b {
     color: #3c3ebc;
 }
+
+p {
+    font-size: 18px;
+}
+
+.project > a {
+    color: #004d7b;
+    text-decoration: none;
+}
+
 /* small */
 @media screen and (max-width: 800px) {
     #nav-outer-mini {
@@ -106,6 +116,9 @@ b {
         object-fit: cover;
       }
     p {
+        max-width: 800px;
+    }
+    .project {
         max-width: 800px;
     }
     #nav-outer {
