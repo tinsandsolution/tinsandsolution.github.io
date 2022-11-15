@@ -14,35 +14,17 @@ body {
     height: 100%;
 }
 
-#nav-outer {
-    width: 10%;
-    height: inherit;
-    width: 250px;
-    background-color: #9ba1e6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-direction: column; */
-}
 
-#nav-inner {
-    height: 97%;
-    width: 88%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#main {
-    width: 90%;
-}
-
-#pfp {
-    border-radius: 50%;
+#main-outer {
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
+    display: flex;
+}
+
+#main-inner {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h1 {
     /* margin: auto; */
@@ -50,14 +32,18 @@ h1 {
     color: #004d7b;
 }
 
-.tagline {
-    color: #004d7b;
-    text-align: center;
-    margin-top: 0px;
-    /* text-align: justify; */
-
+h2, h3 {
+    color: #3c3ebc;
 }
 
+.subsection {
+    margin-left: 3%;
+}
+
+b {
+    color: #7312e5;
+}
+/* small */
 @media screen and (max-width: 800px) {
     #nav-outer-mini {
         background-color: #9ba1e6;
@@ -90,13 +76,14 @@ h1 {
     #nav-outer {
         display: none;
     }
-    #main {
-        width: 100%;
-        /* background-color: #ffbeaf; */
-    }
   }
 
+/* big */
 @media screen and (min-width: 801px) {
+    #nav-inner > a {
+        color: #ffb880;
+        text-decoration: none;
+    }
     #nav-inner-mini {
         display: none;
         /* background-color: #9ba1e6; */
@@ -105,8 +92,38 @@ h1 {
     #nav-outer-mini {
         display: none;
     }
-    #main {
+    .tagline {
+        color: #004d7b;
+        text-align: center;
+        margin-top: 0px;
+        /* text-align: justify; */
+
+    }
+    #pfp {
+        border-radius: 50%;
         width: 100%;
-        /* background-color: #ffbeaf; */
-}
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    p {
+        max-width: 800px;
+    }
+    #nav-outer {
+        width: 10%;
+        height: inherit;
+        width: 250px;
+        background-color: #9ba1e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    #nav-inner {
+        height: 97%;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
