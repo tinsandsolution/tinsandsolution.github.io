@@ -13,6 +13,19 @@
     <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script>
+        const modalThing = document.getElementsByClassName("modal");
+        function showModal(url) {
+            modalDisplay = `<div class='modal-display'><img src='${url}'></div>`
+            modalThing[0].innerHTML = `<div onClick='closeModal()' id='modal'>${modalDisplay}</div>`
+            console.log(modalThing)
+        }
+        function closeModal(){
+            modalThing[0].innerHTML = ""
+        }
+    </script>
+
     <script src="https://kit.fontawesome.com/7ee224539c.js" crossorigin="anonymous"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -20,6 +33,7 @@
 
 <body>
     <!-- https://colorkit.co/color-palette-generator/ffbeaf-9ba1e6-004d7b-ffb880-3c3ebc/ -->
+    <div class="modal"></div>
     <div id="nav-outer">
         <div id="nav-inner">
             <img src="images/pfp.jpg" id="pfp">
@@ -62,11 +76,22 @@
                     <p><b>Coding Languages:</b> Python, HTML, CSS, JavaScript</p>
                     <p><b>Everything Else:</b> React, Redux, Express, Sequelize, Flask, SQL</p>
                     <h2>Projects</h2>
-                    <div class="project"><b>PredictThat</b> - A Kalshi/PredictIt Clone where users can create their own
+                    <div class="project"><b onclick="showModal('./images/predictthat.png')">PredictThat <i class="fa-regular fa-eye"></i></b> - A Kalshi/PredictIt Clone where users can create their own
                         markets, allowing other users to place bets on outcomes.
                         (<a class="project-link" href="https://predictthat.herokuapp.com/">Live Link</a>|<a
                             class="project-link" href="https://github.com/tinsandsolution/predictthat">Source</a>)</div>
+                            <br>
+                    <div class="project" onclick="showModal()"><b>Eatsy <i class="fa-regular fa-eye"></i></b> - (Group Project) An Etsy clone where users can list products to
+                        sell, add items to cart, leave reviews, and purchase items.
 
+                        (<a class="project-link" href="https://eatsy-2022.herokuapp.com/">Live Link</a>|<a
+                            class="project-link" href="https://github.com/Anbui0115/Etsy-group-project">Source</a>)
+                    </div>
+                    <br>
+                    <div class="project" onclick="showModal()"><b>OnlyTracks <i class="fa-regular fa-eye"></i></b> - A SoundCloud clone where users can listen to tracks
+                        uploaded by other users, comment on tracks, and upload.
+                        (<a class="project-link" href="https://onlytracks.herokuapp.com/">Live Link</a>|<a
+                            class="project-link" href="https://github.com/tinsandsolution/OnlyTrackst">Source</a>)</div>
                     <h2>Contact</h3>
                         <p>If you find yourself in Denver, Colorado, please consider reaching out for a coffee!</p>
                         <p>You can email me at oanlara8 -at- gmail.com</p>

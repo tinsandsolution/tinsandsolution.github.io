@@ -48,9 +48,18 @@ p {
     font-size: 18px;
 }
 
+.project > b {
+    cursor: pointer;
+}
+
 .project > a {
     color: #004d7b;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.project > * {
+    font-size: 18px;
 }
 
 /* small */
