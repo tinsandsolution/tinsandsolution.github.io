@@ -17,11 +17,11 @@
     <script>
         const modalThing = document.getElementsByClassName("modal");
         function showModal(url) {
-            modalDisplay = `<div class='modal-display'><img src='${url}'></div>`
+            modalDisplay = `<div class='modal-display'><img id='modal-image' src='${url}'></div>`
             modalThing[0].innerHTML = `<div onClick='closeModal()' id='modal'>${modalDisplay}</div>`
             console.log(modalThing)
         }
-        function closeModal(){
+        function closeModal() {
             modalThing[0].innerHTML = ""
         }
     </script>
@@ -76,20 +76,27 @@
                     <p><b>Coding Languages:</b> Python, HTML, CSS, JavaScript</p>
                     <p><b>Everything Else:</b> React, Redux, Express, Sequelize, Flask, SQL</p>
                     <h2>Projects</h2>
-                    <div class="project"><b onclick="showModal('./images/predictthat.png')">PredictThat <i class="fa-regular fa-eye"></i></b> - A Kalshi/PredictIt Clone where users can create their own
-                        markets, allowing other users to place bets on outcomes.
+                    <div class="project"><b onclick="showModal('./images/predictthat.png')">PredictThat <i
+                                class="fa-regular fa-eye"></i></b> - A Kalshi/PredictIt Clone where users can create
+                        their own
+                        markets, allowing other users to place bets on outcomes. Stack: React/Redux, PostgreSQL, Flask<br>
+                        Implemented fraud prevention measures by disabling modification and deletion of markets after trading has already begun.Ensured user privacy using backend authentication processes, allowing users to only resolve their own markets when logged in.<br>
                         (<a class="project-link" href="https://predictthat.herokuapp.com/">Live Link</a>|<a
                             class="project-link" href="https://github.com/tinsandsolution/predictthat">Source</a>)</div>
-                            <br>
-                    <div class="project" onclick="showModal()"><b>Eatsy <i class="fa-regular fa-eye"></i></b> - (Group Project) An Etsy clone where users can list products to
-                        sell, add items to cart, leave reviews, and purchase items.
-
+                    <br>
+                    <div class="project" onclick="showModal('./images/eatsy.png')"><b>Eatsy <i
+                                class="fa-regular fa-eye"></i></b> - (Group Project) An Etsy clone where users can list
+                        products to
+                        sell, add items to cart, leave reviews, and purchase items. Stack: React/Redux, PostgreSQL, Flask<br>
+                        Established a reputation system by creating a product review, allowing users to leave feedback on purchased items, implemented custom search using redux.<br>
                         (<a class="project-link" href="https://eatsy-2022.herokuapp.com/">Live Link</a>|<a
                             class="project-link" href="https://github.com/Anbui0115/Etsy-group-project">Source</a>)
                     </div>
                     <br>
-                    <div class="project" onclick="showModal()"><b>OnlyTracks <i class="fa-regular fa-eye"></i></b> - A SoundCloud clone where users can listen to tracks
-                        uploaded by other users, comment on tracks, and upload.
+                    <div class="project" onclick="showModal('./images/onlytracks.png')"><b>OnlyTracks <i
+                                class="fa-regular fa-eye"></i></b> - A SoundCloud clone where users can listen to tracks
+                        uploaded by other users, comment on tracks, and upload. Stack: React/Redux, PostgreSQL, Express<br>
+                        Created a preview function where users are able to play music without being logged in, integrated Redux with HTML5 media web components to create customized media playback for users.<br>
                         (<a class="project-link" href="https://onlytracks.herokuapp.com/">Live Link</a>|<a
                             class="project-link" href="https://github.com/tinsandsolution/OnlyTrackst">Source</a>)</div>
                     <h2>Contact</h3>
